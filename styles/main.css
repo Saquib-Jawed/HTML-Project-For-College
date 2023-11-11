@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    user-select: none;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body,
+html,
+*,
+*::before,
+*::after,
+:host,
+:root {
+    word-wrap: break-word;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+body,
+html {
+    color-scheme: dark;
+    background-color: #2D2E31;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+
+section {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+section :is(h2, h3) {
+    font-weight: 400;
+    margin-block: 50px;
+    font-size: 30px;
+}
+
+section h3 {
+    font-size: 25px;
+    position: relative;
+    text-align: left;
+    align-self: flex-start;
+}
+
+section h3::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #FFB257;
+    inset: auto -10px -10px -100px;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section :is(h2, h3) span {
+    color: #FFBC8B;
+}
+
+
+.lined {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+}
+
+.lined::before,
+.lined::after {
+    content: "";
+    height: 5px;
+    flex: 1;
+    background-color: #FFB257;
+}
+
+.lined::before {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.lined::after {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}

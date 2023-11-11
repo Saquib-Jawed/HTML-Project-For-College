@@ -1,0 +1,23 @@
+
+.projects,
+.projects-splat {
+    background-color: #2D2E31;
+}
+.about-banner-right {
+    background-image: url(/assets/about-banner-right.png);
+    background-position: right 0 top -50px;
+    padding: 0;
+}
+.about-banner {
+    padding-top: 0;
+}
+
+.about h4,
+.projects-splat h4 {
+    max-width: 100%;
+    text-align: left;
+}
+
+.skills-list-more {
+    max-width: 1024px;
+}
